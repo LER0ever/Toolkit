@@ -19,7 +19,7 @@ func main() {
 		var seats []seat
 		//var oldseats []seat
 		fmt.Println("\x1b[0;32mRequesting Webpages ... in about 30 seconds\n中国上海 -> 芝加哥 往返机票 2016-08-26\x1b[0m")
-		cmd := exec.Command("phantomjs.exe", "main.js", "http://flights.ctrip.com/international/round-shanghai-chicago-sha-chi?2016-08-26&2016-09-14&y", "webshot.png")
+		cmd := exec.Command("phantomjs", "main.js", "http://flights.ctrip.com/international/round-shanghai-chicago-sha-chi?2016-08-26&2016-09-14&y", "webshot.png")
 		buf, _ := cmd.Output()
 
 		fmt.Println("===================\n\x1b[47;30m" + time.Now().Format("2006-01-02 15:04:05") + "\x1b[0m\n===================")
