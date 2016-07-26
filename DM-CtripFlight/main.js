@@ -86,7 +86,7 @@ webpage.open(url, function(status){
                      //if (flyno.innerHTML != "MU717") continue;
                      var seatrows = c[i].querySelectorAll('div.seat-row')
                      for (var j=0; j<seatrows.length; j++) {
-                        if (parseInt( seatrows[j].querySelector('div.seat-price').querySelector('span.price').innerHTML.substring(12)) > 9500) continue;
+                        if (parseInt( seatrows[j].querySelector('div.seat-price').querySelector('span.price').innerHTML.substring(12)) > 10000) continue;
                         d = d+flyno.innerHTML+" " +seatrows[j].querySelector('div.seat-type').innerHTML + ' '
                         d = d+ seatrows[j].querySelector('div.seat-price').querySelector('span.price').innerHTML.substring(12) + '\n' //querySelector('span.price').
                      }
