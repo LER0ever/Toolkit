@@ -1,0 +1,4 @@
+package: gitlab.com/LER0ever/DarkMagic/DM-QzoneImageGrid
+import:
+- package: github.com/urfave/cli
+- package: github.com/oliamb/cutter
