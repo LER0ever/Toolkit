@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OSS=(linux)
+OSS=(darwin)
 ARCHS=(amd64)
 
 for os in "${OSS[@]}"; do

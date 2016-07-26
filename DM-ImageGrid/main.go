@@ -24,6 +24,10 @@ func main() {
 	app.Action = func(c *cli.Context) error {
 		fmt.Printf("Welcome to L.E.R Qzone Image Dark Magic\n ")
 		imgurl = c.Args().Get(0)
+		if imgurl == "" {
+			fmt.Printf("Usage: DM-ImageGrid yourpicture.jpg")
+			os.Exit(1)
+		}
 		//fmt.Println(imgurl)
 		log.Print(imgurl)
 		MagicCrop(imgurl)
